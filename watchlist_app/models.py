@@ -32,7 +32,7 @@ class Review(models.Model):
     update = models.DateTimeField(auto_now=True)
     
     def __str__(self):
-        return str(self.rating) + " | " + str(self.watchlist.title)
+        return str(self.rating) + " | " + str(self.watchlist.title) + " | " + str(self.review_user)
 
 # class Movie(models.Model):
 #     name = models.CharField(max_length=100)
